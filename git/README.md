@@ -23,7 +23,7 @@ guardar cambios de configuración local
 ### iniciar repositorio
     git init .
 
-### agregar cambios al staging
+### agregar cambios al staged
 ```
 git add directrory 
 ```
@@ -35,6 +35,10 @@ git add *.extensionFile
 ```
 git add . 
 ```
+
+### sacer del staged
+    git restore --staged .
+
 ### comprometer cambios
     git commit -am "your message"
 
@@ -47,6 +51,7 @@ git add .
 ### agregar etiquetas
 usar `-a` para etiquetas complejas
 si no se especifica el código de confirmación se aplica al último commit
+
     git tag tagName(ej : v1.0) condeCommitConfimation
 
 ### subir etiqueta al remoto
